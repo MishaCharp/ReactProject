@@ -1,0 +1,40 @@
+.restourant-card {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.restoraunt-title {
+  text-align: center;
+}
+
+.restourant-card-menu-h3 {
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.restourant-card-menu-details{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+}
+
+.restourant-card-menu-details-price{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    padding: 2px;
+    margin: 0;
+    margin-top: 5px;
+    border: 1px solid red;
+    border-radius: 100%;
+    width: 40px;
+    height: 30px;
+}
+
+.restourant-card-menu-details-summary-name{
+    font-size: 20px;
+}

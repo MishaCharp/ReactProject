@@ -1,0 +1,26 @@
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+.tab{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 18px;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Добавляем стили для активного таба */
+.tab-active {
+  text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    width: 200px;
+    background-color: black;
+    color: white;
+}
