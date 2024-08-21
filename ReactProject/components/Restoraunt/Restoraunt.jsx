@@ -9,7 +9,6 @@ export const Restoraunt = ({id, name, menu, reviews}) => {
         <div className="restourant-card">
             <RestorauntTitle title={name}/>
             <Menu menu={menu}/>
-            <Counter/>
         </div>
     );
 }

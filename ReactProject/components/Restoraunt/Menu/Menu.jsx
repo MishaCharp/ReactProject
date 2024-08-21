@@ -1,3 +1,5 @@
+import { Counter } from "../Counter/Counter";
+
 export const Menu = ({ menu }) => {
   return (
     <div className="restourant-card-menu">
@@ -15,6 +17,7 @@ export const Menu = ({ menu }) => {
           <p className="restourant-card-menu-details-price">{price}$</p>
         </div>
       ))}
+      <Counter/>
     </div>
   );
 };

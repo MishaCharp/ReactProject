@@ -1,8 +1,8 @@
 import { restaurants } from "../../materials/mock.js";
 import { Restoraunt } from "../Restoraunt/Restoraunt";
 
-export const RestorauntPage = ({ restaurantId }) => {
-  if (restaurantId === "all") {
+export const RestorauntPage = ({ allRestaurantTab, restaurantId }) => {
+  if (restaurantId === allRestaurantTab.id) {
     return restaurants.map(({ id, name, menu, reviews }) => (
       <Restoraunt id={id} name={name} menu={menu} reviews={reviews} />
     ));
