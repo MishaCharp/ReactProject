@@ -1,4 +1,4 @@
-import { Counter } from "../Counter/Counter";
+import { DishCounter } from "../../Counter/DishCounter";
 
 export const Menu = ({ menu }) => {
   return (
@@ -17,7 +17,7 @@ export const Menu = ({ menu }) => {
           <p className="restourant-card-menu-details-price">{price}$</p>
         </div>
       ))}
-      <Counter/>
+      <DishCounter />
     </div>
   );
 };
