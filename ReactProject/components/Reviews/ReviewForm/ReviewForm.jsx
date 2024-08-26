@@ -1,6 +1,6 @@
 import { ReviewCounter } from "../../Counter/ReviewCounter.jsx";
 import "../../../styles/reviewForm.css";
-import { useReviewForm } from "./use-review-form";
+import { useReviewForm } from "./use-review-form.jsx";
 
 export const ReviewForm = () => {
   const [state, dispatch] = useReviewForm();
