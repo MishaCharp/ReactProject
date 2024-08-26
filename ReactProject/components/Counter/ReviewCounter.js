@@ -1,4 +1,4 @@
-import { Counter } from "../Counter/BaseCounter/Counter.jsx";
+import { Counter } from "./BaseCounter/Counter.jsx";
 import "../../styles/reviewForm.css";
 
 export const ReviewCounter = ({ rating, dispatch }) => {
