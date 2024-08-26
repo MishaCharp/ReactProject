@@ -1,18 +1,18 @@
 import { Counter } from "../Counter/BaseCounter/Counter.jsx";
 import "../../styles/reviewForm.css";
 
-export const ReviewCounter = ({ rating, onRatingChange, onClear }) => {
+export const ReviewCounter = ({ rating, dispatch }) => {
   const handleIncrease = () => {
-    if (rating < 5) {
-      onRatingChange(rating + 1);
-    }
+    dispatch({ type: "INCREASE_RATING" });
   };
 
   const handleDecrease = () => {
-    if (rating > 1) {
-      onRatingChange(rating - 1);
-    }
+    dispatch({ type: "DECREASE_RATING" });
   };
+
+  const hanldeClear = () => {
+    dispatch({ type: "CLEAR" });
+  }
 
   return (
     <div className="review-counter-container">
@@ -21,7 +21,7 @@ export const ReviewCounter = ({ rating, onRatingChange, onClear }) => {
         onIncrease={handleIncrease}
         onDecrease={handleDecrease}
       />
-      <button className="clear-button" onClick={onClear}>
+      <button className="clear-button" onClick={hanldeClear}>
         Clear
       </button>
     </div>

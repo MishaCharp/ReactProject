@@ -15,9 +15,10 @@ export const Menu = ({ menu }) => {
             </ul>
           </details>
           <p className="restourant-card-menu-details-price">{price}$</p>
+          <DishCounter />
         </div>
-      ))}
-      <DishCounter />
+      ))
+      }
     </div>
   );
 };

@@ -1,28 +1,9 @@
-import { ReviewCounter } from "../Counter/ReviewCounter";
-import "../../styles/reviewForm.css";
-import { useReducer } from "react";
-
-const reviewReducer = (state, action) => {
-  switch (action.type) {
-    case "SET_NAME":
-      return { ...state, name: action.payload };
-    case "SET_TEXT":
-      return { ...state, text: action.payload };
-    case "SET_RATING":
-      return { ...state, rating: action.payload };
-    case "CLEAR":
-      return { name: "", text: "", rating: 1 };
-    default:
-      return state;
-  }
-};
+import { ReviewCounter } from "../../Counter/ReviewCounter.jsx";
+import "../../../styles/reviewForm.css";
+import { useReviewForm } from "./use-review-form";
 
 export const ReviewForm = () => {
-  const [state, dispatch] = useReducer(reviewReducer, {
-    name: "",
-    text: "",
-    rating: 1,
-  });
+  const [state, dispatch] = useReviewForm();
 
   const handleNameChange = (e) => {
     dispatch({ type: "SET_NAME", payload: e.target.value });
@@ -32,12 +13,9 @@ export const ReviewForm = () => {
     dispatch({ type: "SET_TEXT", payload: e.target.value });
   };
 
-  const handleClear = () => {
-    dispatch({ type: "CLEAR" });
-  };
-
   return (
     <div className="review-container">
+      <h2>Напишите свой отзыв</h2>
       <div className="form-group">
         <label>Name</label>
         <input
@@ -59,8 +37,7 @@ export const ReviewForm = () => {
       <div className="form-group">
         <ReviewCounter
           rating={state.rating}
-          onRatingChange={(rating) => dispatch({ type: 'SET_RATING', payload: rating })}
-          onClear={handleClear}
+          dispatch={dispatch}
         />
       </div>
     </div>

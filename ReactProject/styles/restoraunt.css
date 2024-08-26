@@ -38,3 +38,8 @@
 .restourant-card-menu-details-summary-name{
     font-size: 20px;
 }
+
+.restourant-card-reviews-title-h3{
+  font-weight: 100;
+  margin-left: 10px;
+}

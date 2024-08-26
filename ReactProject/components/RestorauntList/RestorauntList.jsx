@@ -1,4 +1,4 @@
-import { ReviewForm } from "../ReviewForm/ReviewForm.jsx";
+import { ReviewForm } from "../Reviews/ReviewForm/ReviewForm.jsx";
 import { AllRestorauntList } from "./AllRestourantList.jsx";
 
 export const RestorauntList = () => {
