@@ -1,12 +1,12 @@
-import { restaurants } from "../../materials/mock.js";
 import { RestorauntTab } from "./RestaurantTab/RestaurantTab.jsx";
-import "../../styles/restorauntsTab.css";
+import styles from "./RestorauntTabs.module.css";
 
 export const RestorauntTabs = ({ tabs, selectedRestaurantId, onTabClick }) => {
   return (
-    <div className="tabs-container">
+    <div className={styles.tabsContainer}>
       {tabs.map(({ id, name }) => (
         <RestorauntTab
+          key={id}
           isActive={id === selectedRestaurantId}
           id={id}
           name={name}

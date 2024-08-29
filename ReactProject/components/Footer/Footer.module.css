@@ -1,4 +1,4 @@
-.header {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -10,7 +10,9 @@
     align-items: center; /* Вертикальное выравнивание по центру */
   }
   
-  .header-title {
+
+
+  .footerTitle {
     margin: 0;
     font-size: 1.7rem;
   }

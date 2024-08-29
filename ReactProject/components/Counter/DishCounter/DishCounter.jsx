@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Counter } from "./BaseCounter/Counter"
+import { Counter } from "../BaseCounter/Counter"
 
 export const DishCounter = () => {
     const [counterValue, setCounterValue] = useState(0);

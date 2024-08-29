@@ -6,7 +6,7 @@ export const ReviewsPage = ({ reviews }) => {
     <>
       <h3 className="restourant-card-reviews-title-h3">Отзывы:</h3>
       {reviews.map(({ id, user, text, rating }) => (
-        <Review id={id} user={user} text={text} rating={rating} />
+        <Review key={id} id={id} user={user} text={text} rating={rating} />
       ))}
       <ReviewForm />
     </>

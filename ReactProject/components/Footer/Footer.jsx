@@ -1,9 +1,9 @@
-import '../../styles/footer.css';
+import styles from "./Footer.module.css";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <p className="footer-title">Footer</p>
+    <footer className={styles.footer}>
+      <p className={styles.footerTitle}>Footer</p>
     </footer>
   );
 };

@@ -1,4 +1,4 @@
-.review-div {
+.reviewDiv {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -8,11 +8,11 @@
     transition: transform 0.2s;
 }
 
-.review-div:hover {
+.reviewDiv:hover {
     transform: translateY(-5px);
 }
 
-.review-user {
+.reviewUser {
     font-size: 18px;
     font-weight: bold;
     color: #333;
@@ -20,7 +20,7 @@
     display: block;
 }
 
-.review-text {
+.reviewText {
     font-size: 16px;
     color: #555;
     margin-bottom: 8px;
@@ -28,7 +28,7 @@
     display: block;
 }
 
-.review-rating {
+.reviewRating {
     font-size: 24px;
     color: #ff9900;
     font-weight: bold;

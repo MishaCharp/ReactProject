@@ -1,0 +1,15 @@
+.restourantCard {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* .restourantCardMenu {
+    
+  } */
+  
+  .restourant-card-reviews-title-h3{
+    font-weight: 100;
+    margin-left: 10px;
+  }

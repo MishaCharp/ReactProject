@@ -1,5 +1,5 @@
-import { Counter } from "./BaseCounter/Counter.jsx";
-import "../../styles/reviewForm.css";
+import { Counter } from "../BaseCounter/Counter.jsx";
+import styles from "./ReviewCounter.module.css";
 
 export const ReviewCounter = ({ rating, dispatch }) => {
   const handleIncrease = () => {
@@ -15,13 +15,13 @@ export const ReviewCounter = ({ rating, dispatch }) => {
   }
 
   return (
-    <div className="review-counter-container">
+    <div className={styles.reviewCounterContainer}>
       <Counter
-        value={rating}
+        value={rating}  
         onIncrease={handleIncrease}
         onDecrease={handleDecrease}
       />
-      <button className="clear-button" onClick={hanldeClear}>
+      <button className={styles.clearButton} onClick={hanldeClear}>
         Clear
       </button>
     </div>

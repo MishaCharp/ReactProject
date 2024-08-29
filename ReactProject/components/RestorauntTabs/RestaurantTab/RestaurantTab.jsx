@@ -1,7 +1,9 @@
+import styles from "./RestarauntTab.module.css";
+
 export const RestorauntTab = ({ id, name, isActive, onClick }) => {
-  const classValue = isActive ? "tab-active" : "tab";
+  const classValue = isActive ? styles.tabActive : styles.tab;
   return (
-    <div className={classValue} onClick={onClick}>
+    <div key={id} className={classValue} onClick={onClick}>
       {name}
     </div>
   );
