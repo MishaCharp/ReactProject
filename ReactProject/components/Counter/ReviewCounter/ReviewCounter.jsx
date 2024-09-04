@@ -15,13 +15,13 @@ export const ReviewCounter = ({ rating, dispatch }) => {
   }
 
   return (
-    <div className={styles.reviewCounterContainer}>
+    <div className={styles.container}>
       <Counter
         value={rating}  
         onIncrease={handleIncrease}
         onDecrease={handleDecrease}
       />
-      <button className={styles.clearButton} onClick={hanldeClear}>
+      <button className={styles.btn} onClick={hanldeClear}>
         Clear
       </button>
     </div>

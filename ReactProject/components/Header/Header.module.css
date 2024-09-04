@@ -10,7 +10,7 @@
   align-items: center; /* Вертикальное выравнивание по центру */
 }
 
-.headerTitle {
+.title {
   margin: 0;
   font-size: 1.7rem;
 }

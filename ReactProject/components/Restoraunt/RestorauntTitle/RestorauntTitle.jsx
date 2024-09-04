@@ -1,7 +1,5 @@
 import styles from "./RestorauntTitle.module.css";
 
-export const RestorauntTitle = ({title}) => {
-    return(
-        <h2 className={styles.restorauntTitle}>{title}</h2>
-    );
-}
+export const RestorauntTitle = ({ title }) => {
+  return <h2 className={styles.title}>{title}</h2>;
+};

@@ -3,12 +3,12 @@ import styles from "./Menu.module.css";
 
 export const Menu = ({ menu }) => {
   return (
-    <div className={styles.restourantCardMenu}>
-      <h3 className={styles.restourantCardMenuH3}>Меню:</h3>
+    <div>
+      <h3 className={styles.card}>Меню:</h3>
       {menu.map(({ id, name, price, ingredients }) => (
-        <div key={id} className={styles.restourantCardMenuDetails}>
+        <div key={id} className={styles.details}>
           <details>
-            <summary className={styles.restourantCardMenuDetailsSummaryName}>
+            <summary className={styles.name}>
               {name}
             </summary>
             <ul>
@@ -17,7 +17,7 @@ export const Menu = ({ menu }) => {
               ))}
             </ul>
           </details>
-          <p className={styles.restourantCardMenuDetailsPrice}>{price}$</p>
+          <p className={styles.price}>{price}$</p>
           <DishCounter />
         </div>
       ))}

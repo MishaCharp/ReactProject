@@ -1,29 +1,29 @@
-.restourantCardMenuH3 {
-    font-weight: 100;
-    margin-left: 10px;
-  }
-  
-  .restourantCardMenuDetails{
-      margin-left: 5px;
-      margin-bottom: 5px;
-      border: 1px solid black;
-      padding: 10px;
-      width: 300px;
-  }
-  
-  .restourantCardMenuDetailsPrice{
-      text-align: center;
-      vertical-align: middle;
-      font-size: 24px;
-      padding: 2px;
-      margin: 0;
-      margin-top: 5px;
-      border: 1px solid red;
-      border-radius: 100%;
-      width: 40px;
-      height: 30px;
-  }
-  
-  .restourantCardMenuDetailsSummaryName{
-      font-size: 20px;
-  }
+.card {
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.details {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+}
+
+.price {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  padding: 2px;
+  margin: 0;
+  margin-top: 5px;
+  border: 1px solid red;
+  border-radius: 100%;
+  width: 40px;
+  height: 30px;
+}
+
+.name {
+  font-size: 20px;
+}

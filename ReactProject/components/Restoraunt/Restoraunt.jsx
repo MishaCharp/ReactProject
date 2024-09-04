@@ -6,7 +6,7 @@ import styles from "./Restoraunt.module.css";
 
 export const Restoraunt = ({ id, name, menu, reviews }) => {
   return (
-    <div key={id} className={styles.restourantCard}>
+    <div key={id} className={styles.card}>
       <RestorauntTitle title={name} />
       <Menu menu={menu} />
       <ReviewsPage reviews={reviews} />

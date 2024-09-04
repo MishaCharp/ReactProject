@@ -3,7 +3,7 @@ import styles from "./RestorauntTabs.module.css";
 
 export const RestorauntTabs = ({ tabs, selectedRestaurantId, onTabClick }) => {
   return (
-    <div className={styles.tabsContainer}>
+    <div className={styles.container}>
       {tabs.map(({ id, name }) => (
         <RestorauntTab
           key={id}

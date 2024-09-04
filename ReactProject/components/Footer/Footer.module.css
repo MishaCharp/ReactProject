@@ -1,18 +1,16 @@
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    display: flex; /* Используем flexbox */
-    justify-content: center; /* Горизонтальное выравнивание по центру */
-    align-items: center; /* Вертикальное выравнивание по центру */
-  }
-  
+  background-color: #333;
+  color: white;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex; /* Используем flexbox */
+  justify-content: center; /* Горизонтальное выравнивание по центру */
+  align-items: center; /* Вертикальное выравнивание по центру */
+}
 
-
-  .footerTitle {
-    margin: 0;
-    font-size: 1.7rem;
-  }
+.title {
+  margin: 0;
+  font-size: 1.7rem;
+}
