@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { RestorauntPage } from "../components/RestorauntPage/RestorauntPage";
 import { RestorauntTabs } from "../components/RestorauntTabs/RestorauntTabs";
+import { AllRestorauntList } from "../components/RestorauntList/AllRestourantList.jsx"
 import { Layout } from "../components/Layout/Layout";
 import { restaurants } from "../materials/mock.js";
-import { RestorauntList } from "../components/RestorauntList/RestorauntList.jsx";
 
 export const App = () => {
   const allRestaurantTab = { id: "all", name: "Все рестораны" };
@@ -26,7 +26,7 @@ export const App = () => {
           restaurantId={selectedRestaurantId}
         />
       ) : (
-        <RestorauntList />
+        <AllRestorauntList />
       )}
     </Layout>
   );
