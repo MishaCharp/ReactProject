@@ -1,6 +1,7 @@
-import { ReviewCounter } from "../../Counter/ReviewCounter.jsx";
-import "../../../styles/reviewForm.css";
+import { ReviewCounter } from "../../Counter/ReviewCounter/ReviewCounter.jsx";
 import { useReviewForm } from "./use-review-form.jsx";
+
+import styles from "./ReviewForm.module.css";
 
 export const ReviewForm = () => {
   const [state, dispatch] = useReviewForm();
@@ -14,31 +15,28 @@ export const ReviewForm = () => {
   };
 
   return (
-    <div className="review-container">
+    <div className={styles.container}>
       <h2>Напишите свой отзыв</h2>
-      <div className="form-group">
+      <div className={styles.form}>
         <label>Name</label>
         <input
           type="text"
-          className="form-input"
+          className={styles.input}
           value={state.name}
           onChange={handleNameChange}
         />
       </div>
-      <div className="form-group">
+      <div className={styles.form}>
         <label>Text</label>
         <input
           type="text"
-          className="form-input"
+          className={styles.input}
           value={state.text}
           onChange={handleTextChange}
         />
       </div>
-      <div className="form-group">
-        <ReviewCounter
-          rating={state.rating}
-          dispatch={dispatch}
-        />
+      <div className={styles.form}>
+        <ReviewCounter rating={state.rating} dispatch={dispatch} />
       </div>
     </div>
   );

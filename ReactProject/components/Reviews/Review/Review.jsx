@@ -1,11 +1,11 @@
-import "../../../styles/review.css";
+import styles from "./Review.module.css";
 
-export const Review = ({id, user, text, rating}) => {
-    return(
-        <div className="review-div">
-            <span className="review-user">{user}</span>
-            <span className="review-text">{text}</span>
-            <span className="review-rating">{rating}</span>
-        </div>
-    );
-}
+export const Review = ({ id, user, text, rating }) => {
+  return (
+    <div className={styles.review}>
+      <span className={styles.user}>{user}</span>
+      <span className={styles.text}>{text}</span>
+      <span className={styles.rating}>{rating}</span>
+    </div>
+  );
+};
