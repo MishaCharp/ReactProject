@@ -1,6 +1,15 @@
 .card {
-    border: 1px solid black;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-  }
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.light {
+  border: 3px solid black;
+  background-color: white;
+}
+
+.dark {
+  border: 3px solid rgb(167, 126, 126);
+  background-color: black;
+}

@@ -1,17 +1,28 @@
-.tab{
-    text-align: center;
-    border: 1px solid black;
-    padding: 5px;
-    font-size: 18px;
-    width: 200px;
-    cursor: pointer;
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-.tabActive {
-  text-align: center;
-    padding: 5px;
-    font-size: 18px;
-    width: 200px;
-    background-color: black;
-    color: white;
+.tabLight {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.tabDark {
+  background-color: #555;
+  color: white;
+}
+
+.tabLight.tabActive {
+  background-color: black;
+  color: white;
+}
+
+.tabDark.tabActive {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }

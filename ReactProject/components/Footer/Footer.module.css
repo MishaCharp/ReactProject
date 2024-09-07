@@ -1,13 +1,28 @@
 .footer {
-  background-color: #333;
-  color: white;
   text-align: center;
   top: 0;
   width: 100%;
   height: 50px;
-  display: flex; /* Используем flexbox */
-  justify-content: center; /* Горизонтальное выравнивание по центру */
-  align-items: center; /* Вертикальное выравнивание по центру */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.themeFooterLight{
+  background-color: #ccc;
+  color: black;
+}
+
+.themeFooterDark{
+  background-color: #333;
+  color: white;
 }
 
 .title {

@@ -1,14 +1,31 @@
-.card {
+.title {
   font-weight: 100;
   margin-left: 10px;
+}
+
+.titleDark {
+  color: white;
+}
+
+.titleLight {
+  color: black;
 }
 
 .details {
   margin-left: 5px;
   margin-bottom: 5px;
-  border: 1px solid black;
   padding: 10px;
   width: 300px;
+}
+
+.detailsLight{
+  color: black;
+  border: 1px solid black;
+}
+
+.detailsDark{
+  color: white;
+  border: 1px solid white;
 }
 
 .price {
@@ -18,10 +35,17 @@
   padding: 2px;
   margin: 0;
   margin-top: 5px;
-  border: 1px solid red;
   border-radius: 100%;
   width: 40px;
   height: 30px;
+}
+
+.priceDark{
+  border: 1px solid #00ffff;
+}
+
+.priceLight{
+  border: 1px solid red;
 }
 
 .name {
