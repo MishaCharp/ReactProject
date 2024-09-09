@@ -1,9 +1,16 @@
+import { useContext } from "react";
 import styles from "./RestarauntTab.module.css";
+import { ThemeContext } from "../../ThemeProvider/ThemeProvider";
 
 export const RestorauntTab = ({ id, name, isActive, onClick }) => {
-  const classValue = isActive ? styles.tabActive : styles.tab;
+  const { theme } = useContext(ThemeContext);
+
+  const themeTabClass = theme === "light" ? styles.tabLight : styles.tabDark;
+
+  const isActiveClassValue = isActive ? styles.tabActive : "";
+
   return (
-    <div className={classValue} onClick={onClick}>
+    <div className={`${styles.tab} ${themeTabClass} ${isActiveClassValue}`} onClick={onClick}>
       {name}
     </div>
   );

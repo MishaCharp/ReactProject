@@ -1,9 +1,17 @@
 import { ReviewCounter } from "../../Counter/ReviewCounter/ReviewCounter.jsx";
 import { useReviewForm } from "./use-review-form.jsx";
+import { ThemeContext } from "../../ThemeProvider/ThemeProvider.jsx";
 
 import styles from "./ReviewForm.module.css";
+import { useContext } from "react";
 
 export const ReviewForm = () => {
+  
+  const { theme } = useContext(ThemeContext);
+  const isLight = theme === "light";
+
+  const themeStyle = isLight ? styles.light : styles.dark;
+
   const [state, dispatch] = useReviewForm();
 
   const handleNameChange = (e) => {
@@ -15,7 +23,7 @@ export const ReviewForm = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${themeStyle}`}>
       <h2>Напишите свой отзыв</h2>
       <div className={styles.form}>
         <label>Name</label>
