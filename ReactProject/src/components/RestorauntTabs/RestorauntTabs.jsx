@@ -1,15 +1,14 @@
 import { RestorauntTab } from "./RestaurantTab/RestaurantTab.jsx";
 import styles from "./RestorauntTabs.module.css";
 
-export const RestorauntTabs = ({ tabs, selectedRestaurantId, onTabClick }) => {
+export const RestorauntTabs = ({ restaurantsIds, selectedRestaurantId, onTabClick }) => {
   return (
     <div className={styles.container}>
-      {tabs.map(({ id, name }) => (
+      {restaurantsIds.map((id) => (
         <RestorauntTab
           key={id}
           isActive={id === selectedRestaurantId}
           id={id}
-          name={name}
           onClick={() => onTabClick(id)}
         />
       ))}
