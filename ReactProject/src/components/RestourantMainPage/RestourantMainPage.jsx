@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { RestorauntTabs } from "../RestorauntTabs/RestorauntTabs";
 import { selectRestaurantsIds } from "../../redux/entities/restaurants/index.js";
-import { RestourantPage } from "../RestorauntPage/RestorauntPage.jsx";
 import { useState } from "react";
+import { Restoraunt } from "../Restoraunt/Restoraunt.jsx";
 
 export const RestorauntMainPage = () => {
   const restaurantsIds = useSelector(selectRestaurantsIds);
@@ -16,7 +16,7 @@ export const RestorauntMainPage = () => {
         selectedRestaurantId={selectedRestaurantId}
         onTabClick={setSelectedRestaurantId}
       />
-      <RestourantPage restaurantId={selectedRestaurantId} />
+      <Restoraunt restorauntId={selectedRestaurantId} />
     </>
   );
 };
