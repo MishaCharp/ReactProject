@@ -7,7 +7,7 @@ import { UserContext } from "../../UserProvider/UserProvider";
 
 import styles from "./ReviewsPage.module.css";
 
-export const ReviewsPage = ({ reviews }) => {
+export const ReviewsPage = ({ reviewsIds }) => {
   const { theme } = useContext(ThemeContext);
   const { user } = useContext(UserContext);
 
@@ -16,8 +16,8 @@ export const ReviewsPage = ({ reviews }) => {
   return (
     <>
       <h3 className={`${styles.title} ${themeStyle}`}>Отзывы:</h3>
-      {reviews.map(({ id, user, text, rating }) => (
-        <Review key={id} id={id} user={user} text={text} rating={rating} />
+      {reviewsIds.map((id) => (
+        <Review key={id} reviewId={id}/>
       ))}
       {user && <ReviewForm />}
     </>
